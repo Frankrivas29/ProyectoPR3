@@ -3,7 +3,7 @@
 #include <string> // Incluir la librería string si estás utilizando la clase string
 using namespace std;
 
-class Carta 
+class Carta
 {
 private:
     string Nombre;       // Nombre de la carta
@@ -14,7 +14,7 @@ private:
 
 public:
     // Constructor
-    Cartas();
+    Carta();
 
     // Métodos para establecer y obtener los valores de los atributos
     void set_Nombre(const string& nombre);

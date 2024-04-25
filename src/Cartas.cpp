@@ -1,30 +1,72 @@
 #include <cartas.h>
 using namespace std;
 // Constructor
-Cartas()
+Carta()
 {};
 
-Cartas(string nombre, string descripcion, int daño, int coste, bool usada)
+Carta(string nombre, string descripcion, int daño, int coste, bool usada)
 {
+
+	Nombre = nombre;
+	Descripcion = descripcion;
+	Daño = daño;
+	Coste = coste;
+	Usada = usada;
 
 };
 
 // Métodos para establecer y obtener los valores de los atributos
-void set_Nombre(const string& nombre);
+void set_Nombre(const string& nombre)
+{
+	Nombre = nombre;
 
-string get_Nombre() const;
+};
 
-void set_Descripcion(const string& descripcion);
+string get_Nombre() const
+{
 
-string get_Descripcion() const;
+	return Nombre;
 
-void set_Daño(int daño);
+};
 
-int get_Daño() const;
+void set_Descripcion(const string& descripcion)
+{
 
-void set_Coste(int coste);
+	Descripcion = descripcion;
 
-int get_Coste() const;
+};
+
+string get_Descripcion() const
+{
+
+	return Descripcion;
+
+};
+
+void set_Daño(int daño)
+
+{
+	Daño = daño;
+};
+
+int get_Daño() const
+{
+
+	return Daño;
+
+};
+
+void set_Coste(int coste)
+{
+	Coste = coste;
+
+};
+
+int get_Coste() const
+{
+	return Coste;
+
+};
 
 void set_Usada(bool usada)
 {
@@ -35,7 +77,7 @@ void set_Usada(bool usada)
 
 bool get_Usada() const
 {
-	return false;
+	return Usada;
 }
 
 
