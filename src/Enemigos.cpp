@@ -1,77 +1,54 @@
-#include <Enemigos.h>
-using namespace std;
+#include "Enemigos.hpp"
 
-//constructor
-Enemigo()
-{};
+// Constructor
+Enemigo::Enemigo(string nombre, string descripcion, int vida, int energia, int dano)
+    : Nombre(nombre), Descripcion(descripcion), Vida(vida), Energia(energia), Dano(dano) {}
 
-Enemigo(string nombre, string descripcion, int vida, int energia, int da駉)
-{
+// Implementaci贸n de las funciones de acceso
 
-	Nombre = nombre;
-	Descripcion = descripcion;
-	Vida = vida;
-	Energia = energia;
-	Da駉 = da駉;
-	vector <string&> Movimientos = vector <string&> movimientos;
-};
-
-void set_Nombre(const string& nombre)
-{
-	Nombre = nombre;
-
-};
-string get_Nombre() const
-
-{
-	return Nombre;
-};
-
-void set_Descripcion(const string& descripcion)
-{
-
-	Descripcion = descripcion;
-
+void Enemigo::set_Nombre(const string& nombre) {
+    Nombre = nombre;
 }
-;
-string get_Descripcion() const
-{
-	return Descripcion;
-};
 
-void set_Vida(int vida)
-{
-	Vida = vida;
-};
-int get_Vida() const
-{
-	return Vida;
-};
+string Enemigo::get_Nombre() const {
+    return Nombre;
+}
 
-void set_Energia(int energia) 
-{
-	Energia = energia;
+void Enemigo::set_Descripcion(const string& descripcion) {
+    Descripcion = descripcion;
+}
 
-};
-int get_Energia() const
-{
-	return Energia;
-};
+string Enemigo::get_Descripcion() const {
+    return Descripcion;
+}
 
-void set_Da駉(int da駉)
-{
-	Da駉 = da駉;
-};
-int get_Da駉() const
-{
-	return Da駉;
-};
+void Enemigo::set_Vida(int vida) {
+    Vida = vida;
+}
 
-void set_Movimientos(const vector <string&> movimientos)
-{
-	vector <string&> Movimientos = vector <string&> movimientos;
-};
-vector <string> get_Movimientos() const
-{
-	return vector <string&> movimientos;
-};
+int Enemigo::get_Vida() const {
+    return Vida;
+}
+
+void Enemigo::set_Energia(int energia) {
+    Energia = energia;
+}
+
+int Enemigo::get_Energia() const {
+    return Energia;
+}
+
+void Enemigo::set_Dano(int dano) {
+    Dano = dano;
+}
+
+int Enemigo::get_Dano() const {
+    return Dano;
+}
+
+// Definici贸n de la funci贸n Mostrar_Datos
+void Enemigo::Mostrar_Datos() {
+    cout << "Nombre: " << Nombre << endl;
+    cout << "Descripci贸n: " << Descripcion << endl;
+    cout << "Vida: " << Vida << endl;
+}

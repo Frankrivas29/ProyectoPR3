@@ -1,49 +1,41 @@
-#include <Personaje.h>
-using namespace std;
+#include "Personaje.hpp" // Incluir el archivo de encabezado correspondiente
 
-Personaje()
-{};
+// Constructor por defecto
+Personaje::Personaje() {}
 
-Personaje(const string nombre, int vida, int energia, const stack <string&> ataques)
-{
-	Nombre = nombre;
-	Vida = vida;
-	Energia = energia;
-	stack <string&> Ataques = stack <string&> ataques;
-};
+// Constructor con parámetros
+Personaje::Personaje(const string& nombre, int vida, int energia, const stack<string>& ataques)
+    : Nombre(nombre), Vida(vida), Energia(energia), Ataques(ataques) {}
 
-void set_Nombre(const string& nombre)
-{
-	Nombre = nombre;
-};
-string get_Nombre() const
-{
-	return Nombre;
-};
+// Funciones de modificación y acceso
+void Personaje::set_Nombre(const string& nombre) {
+    Nombre = nombre;
+}
 
-int set_Vida(int vida)
-{
-	Vida = vida;
-};
-int get_Vida()
-{
-	return Vida;
-};
+string Personaje::get_Nombre() const {
+    return Nombre;
+}
 
-int set_Energia(int energia)
-{
-	Energia = energia;
-};
-int get_Energia()
-{
-	return Energia;
-};
+void Personaje::set_Vida(int vida) {
+    Vida = vida;
+}
 
-void set_Ataques(const stack <string&> ataques)
-{
-	stack <string&> Ataques = stack <string&> ataques;
-};
-stack <string> get_Ataques() const
-{
-	return stack <string&> Ataques;
-};
+int Personaje::get_Vida() const {
+    return Vida;
+}
+
+void Personaje::set_Energia(int energia) {
+    Energia = energia;
+}
+
+int Personaje::get_Energia() const {
+    return Energia;
+}
+
+void Personaje::set_Ataques(const stack<string>& ataques) {
+    Ataques = ataques;
+}
+
+stack<string> Personaje::get_Ataques() const {
+    return Ataques;
+}
