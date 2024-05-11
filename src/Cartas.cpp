@@ -1,13 +1,17 @@
 #include "cartas.hpp"
+#include <iostream>
+#include <string>
 using namespace std;
 
 // Constructor
 Carta::Carta() {}
 
-Carta::Carta(string nombre, string descripcion, int dano, int coste, bool usada)
+Carta::Carta(string nombre, string descripcion, string tipo, int Id, int dano, int coste, bool usada)
 {
     Nombre = nombre;
     Descripcion = descripcion;
+    Tipo = tipo;
+    ID = Id;
     Dano = dano;
     Coste = coste;
     Usada = usada;
@@ -32,6 +36,28 @@ void Carta::set_Descripcion(const string& descripcion)
 string Carta::get_Descripcion() const
 {
     return Descripcion;
+
+}
+
+void Carta::set_Tipo(const string& tipo)
+{
+    Tipo = tipo;
+}
+
+string Carta::get_Tipo() const
+{
+    return Tipo;
+
+}
+
+void Carta::set_ID(int Id)
+{
+    ID = Id;
+}
+
+int Carta::get_ID() const
+{
+    return ID;
 }
 
 void Carta::set_Dano(int dano)

@@ -4,8 +4,8 @@
 Personaje::Personaje() {}
 
 // Constructor con parámetros
-Personaje::Personaje(const string& nombre, int vida, int energia, const stack<string>& ataques)
-    : Nombre(nombre), Vida(vida), Energia(energia), Ataques(ataques) {}
+Personaje::Personaje(const string& nombre, int vida, int energia)
+    : Nombre(nombre), Vida(vida), Energia(energia) {}
 
 // Funciones de modificación y acceso
 void Personaje::set_Nombre(const string& nombre) {
@@ -30,12 +30,4 @@ void Personaje::set_Energia(int energia) {
 
 int Personaje::get_Energia() const {
     return Energia;
-}
-
-void Personaje::set_Ataques(const stack<string>& ataques) {
-    Ataques = ataques;
-}
-
-stack<string> Personaje::get_Ataques() const {
-    return Ataques;
 }

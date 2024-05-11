@@ -12,13 +12,12 @@ private:
     string Nombre;
     int Vida;
     int Energia;
-    stack<string> Ataques;
 public:
     // Constructor por defecto
     Personaje();
 
     // Constructor con parámetros
-    Personaje(const string& nombre, int vida, int energia, const stack<string>& ataques);
+    Personaje(const string& nombre, int vida, int energia);
 
     // Funciones de modificación y acceso
     void set_Nombre(const string& nombre);
@@ -29,7 +28,4 @@ public:
 
     void set_Energia(int energia);
     int get_Energia() const;
-
-    void set_Ataques(const stack<string>& ataques);
-    stack<string> get_Ataques() const;
 };
