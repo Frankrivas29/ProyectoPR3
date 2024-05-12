@@ -9,13 +9,14 @@ class Enemigo {
 private:
     string Nombre;
     string Descripcion;
+    int ID;
     int Vida;
     int Energia;
     int Dano;
 
 public:
     // Constructor
-    Enemigo(string nombre, string descripcion, int vida, int energia, int dano);
+    Enemigo(string nombre, string descripcion, int Id, int vida, int energia, int dano);
 
     // Funciones de acceso
     void set_Nombre(const string& nombre);
@@ -23,6 +24,9 @@ public:
 
     void set_Descripcion(const string& descripcion);
     string get_Descripcion() const;
+
+    void set_ID(int Id);
+    int get_ID() const;
 
     void set_Vida(int vida);
     int get_Vida() const;
@@ -33,6 +37,5 @@ public:
     void set_Dano(int dano);
     int get_Dano() const;
 
-    // Declaración de la función Mostrar_Datos
-    void Mostrar_Datos();
+
 };

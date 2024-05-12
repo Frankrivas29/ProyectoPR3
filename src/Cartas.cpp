@@ -89,3 +89,13 @@ bool Carta::get_Usada() const
 {
     return Usada;
 }
+
+void Carta::set_ID_original(int Id_original)
+{
+    ID_original = Id_original;
+}
+
+int Carta::get_ID_original() const
+{
+    return ID_original;
+}

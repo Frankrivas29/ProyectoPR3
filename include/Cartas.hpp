@@ -13,6 +13,7 @@ private:
     int Dano;            // Valor de daño de la carta
     int Coste;           // Costo de la carta
     bool Usada;          // Indica si la carta ha sido usada
+    int ID_original;
 
 public:
     // Constructor sin parámetros
@@ -42,4 +43,7 @@ public:
 
     void set_Usada(bool usada);
     bool get_Usada() const;
+    
+    void set_ID_original(int Id_original);
+    int get_ID_original() const;
 };
