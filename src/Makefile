@@ -3,7 +3,7 @@
 CXX = clang++ -std=c++17
 CXXFLAGS = -Wall -Wextra -I../include
 # List of source files
-SRCS = Main.cpp Personaje.cpp Enemigos.cpp Cartas.cpp
+SRCS = Main.cpp Personaje.cpp Enemigos.cpp Cartas.cpp ArbolBinario.cpp
 # List of object files (automatically generated from source files)
 OBJS = $(SRCS:.cpp=.o)
 # Target rule: Main
